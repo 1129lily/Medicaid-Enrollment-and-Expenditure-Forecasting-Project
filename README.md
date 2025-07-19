@@ -26,7 +26,7 @@ https://emrts.us/2025/01/03/medicaid-enrollment-expenditure-forecast-project/
 
 - The raw expenditure data is distributed across multiple individual documents hosted on the MFCU webpage.
 - A web crawler script (`data process (mfcu).ipynb`) was developed to **automatically download all available documents** from the MFCU site.
-- These documents come in **various formats**, including PDF and HTML (`.htm`). Inconsistent formats across years make uniform analysis difficult.
+- These documents come in **various formats**, including PDF(`.pdf`) and HTML (`.htm`). Inconsistent formats across years make uniform analysis difficult.
 - To address this, all files are **converted into structured CSV files**, using a combination of PDF parsing and HTML table extraction methods, to facilitate consistent and scalable data analysis.
 
 ### 3.2 Enrollment Data
@@ -62,7 +62,7 @@ Multiple forecasting models are employed to capture short-term and long-term dyn
 Forecasts include confidence intervals and visualizations for each approach.  
 Code for each model can be found in the respective scripts:
 
-- `3 time series analysis.ipynb`
+- `time series analysis.ipynb`
 - `prophet_enrollment.r`, `prophet_expenditure.r`
 
 ## Installation
